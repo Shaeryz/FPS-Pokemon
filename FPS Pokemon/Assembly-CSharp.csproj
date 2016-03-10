@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{5330AA3F-1D54-37C3-9577-11EE959150E6}</ProjectGuid>
+    <ProjectGuid>{2C08E05A-C5DC-AE1B-1A23-B9F8DF6AFC1D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -45,12 +45,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Flags\pickup.cs" />
      <Compile Include="Assets\Player\Bullet.cs" />
      <Compile Include="Assets\Player\MultiFPController.cs" />
      <Compile Include="Assets\Player\MultiFPMouseLook.cs" />
      <Compile Include="Assets\Player\PlayerShoot.cs" />
+     <Compile Include="Assets\Player\PokeballInventory.cs" />
      <Compile Include="Assets\PlayerManager\PlayerManager.cs" />
      <Compile Include="Assets\PlayerManager\PlayerStart.cs" />
+     <Compile Include="Assets\Pokeball\pokeball.cs" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
      <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
@@ -64,7 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{DDDF4228-7A7E-CE00-61F5-C97868D44063}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{3012AFCB-922A-EE53-E105-A928B772E2C0}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

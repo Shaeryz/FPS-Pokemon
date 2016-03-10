@@ -36,10 +36,14 @@ public class PlayerManager : MonoBehaviour {
             {
                 
                 PlayerShoot ps = players[i].GetComponent<PlayerShoot>();
-                ps.resetLife();
+				ps.dropPokemon();
+				ps.resetLife();
+
                 players[i].transform.position = playersStarts[Random.Range(0, playersStarts.Length)].transform.position;
             }
 
         }
     }
+
+
 }

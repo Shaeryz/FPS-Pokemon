@@ -10,6 +10,7 @@ public class PlayerShoot : MonoBehaviour {
     public Transform CrossHair;
     public Transform TextInfo;
 
+
     private int NumController;
     private string shootBtn = "Fire1";
     private string jmpBtn;
@@ -28,6 +29,7 @@ public class PlayerShoot : MonoBehaviour {
     public void resetLife() { this.life = 100; updateText(); }
     public void addFrag(int frag) { this.frag += frag; updateText(); }
     public void updateText() { m_textLife.text = "Life : " + life + " / Frags : " + frag; }
+
 
     //To be called when instancing player
     public void initialise(int numController, int nbPlayers)
@@ -91,4 +93,9 @@ public class PlayerShoot : MonoBehaviour {
         bullet.GetComponent<Rigidbody>().AddForce(camera.transform.forward * 2000);
         bullet.GetComponent<Bullet>().owner = this;
     }
+
+	public void dropPokemon() {
+		GetComponent<PokeballInventory> ().dropPokemon();
+
+	}
 }
